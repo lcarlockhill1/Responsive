@@ -1,0 +1,26 @@
+/* Background Beginning*/
+
+body{
+	background-color:#fafafa;
+	font-family: 'Playfair Display', serif;
+}
+
+h1{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:bold;
+	font-size:24px;
+}
+h2{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:bold;
+	font-size:16px;
+}
+/* Nav Beginning*/
+
+/* Banner Beginning*/
+
+/* Portfolio Section Beginning*/
+
+/* Contact Section Beginning*/
+/* Footer Beginning*/
+/* Media Queries Beginning*/
