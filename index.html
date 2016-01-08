@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
- <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700|Ubuntu:400,700,500,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family%20Vollkorn:400,700,400italic,700italic-Ubuntu:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
   <title>Lisa Hill Responsive Profile</title>
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/hamburger.css"> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" href="burger.js"></script>
+<script type="text/javascript" src="js/burger.js"></script>
 </head>
 
 <body>
@@ -17,9 +18,9 @@
 			<ul class="top-nav">
 				<li><a href="#" class="name current-item">Lisa Carlock Hill</a></li>
 			
-			<li><a href="#" class="top-menu">CONTACT</a></li>
-			<li><a href="#" class="top-menu">PORTFOLIO</a></li>
-			<li><a href="#"class="top-menu">HOME</a></li>
+			<li><a href="#contact" class="top-menu">CONTACT</a></li>
+			<li><a href="#portfolio" class="top-menu">PORTFOLIO</a></li>
+			<li><a href="#about" class="top-menu">HOME</a></li>
 			
 			</ul>
  
@@ -27,16 +28,19 @@
 	<nav class="mobile">
 <h1 class="mobile-label">Lisa Hill's Site</h1>
   <button>Toggle</button>
-  <div>
-    <li><a href="#" class="top-menu">CONTACT</a></li>
-			<li><a href="#" class="top-menu">PORTFOLIO</a></li>
-			<li><a href="#"class="top-menu">HOME</a></li>
+  <div id="burger">
+  			<ul>
+    		<li><a href="#contact" class="top-menu">CONTACT</a></li>
+			<li><a href="#portfolio" class="top-menu">PORTFOLIO</a></li>
+			<li><a href="#about" class="top-menu">HOME</a></li>
+		</ul>
   </div>
 </nav>
 <!--  -->
 	<div class="wrapper">
 
 		<div class="about">
+			<h2 id="about">About Me</h2>
 			<article class="bio-banner">
 
 				<p class="bio-text">
@@ -61,7 +65,7 @@
 				
 				<!-- 780.5px X 250.50px-->	
 
-				<img src="Images/flower1.jpg"class="bio-pic des"/>
+				<img src="Images/flower1.jpg" class="bio-pic des" alt="flower"/>
 				
 			</aside>
 
@@ -69,58 +73,53 @@
 		
 		<div class="portfolio">
 
-			<h2>PORTFOLIO</h2>
+			<h2 id="portfolio">PORTFOLIO</h2>
 
 			<div class="desktop-full-box">
 										<div class="blank"></div>
 
-<!-- 				<div class="small-container">
- -->
-					<figure>
-						<img class="portfolio-img  invert" src="Images/portfolio-1.png">
-						<div class="blank"></div>
-						<figcaption>Marketing Page</figcaption>
-						<p class="caption-text">The project show the front page of a marketing website mean for a specific business I am interestested in.</p>
+				<figure>
+						<img class="portfolio-img  invert" src="Images/portfolio-1.png" alt="marketing">
+						
+						<p>Marketing Page</p>
+						<figcaption class="caption-text">The project show the front page of a marketing website mean for a specific business I am interestested in.</figcaption>
 
 					</figure>
 					<figure>
-						<img class="portfolio-img   invert" src="Images/portfolio-2.png">
-						<div class="blank"></div>
-						<figcaption>Search Page</figcaption>
-						<p class="caption-text">This project searches through a specific database to find information that the user's trying to look up.</p>
+						<img class="portfolio-img   invert" src="Images/portfolio-2.png" alt="search">
+						
+						<p>Search Page</p>
+						<figcaption class="caption-text">This project searches through a specific database to find information that the user's trying to look up.</figcaption>
 
 					</figure>
 					<figure>
-						<img class="portfolio-img  invert" src="Images/portfolio-3.png">
-						<div class="blank"></div>
-						<figcaption>Travel App</figcaption>
-						<p class="caption-text">This project compares travel times based on different transportation methods and tells you the best one.</p>
+						<img class="portfolio-img  invert" src="Images/portfolio-3.png" alt="travel app">
+						
+						<p>Travel App</p>
+						<figcaption class="caption-text">This project compares travel times based on different transportation methods and tells you the best one.</figcaption>
 
 					</figure>
 
 
-				<!-- </div> -->
-			<!-- 	<div class="blank"></div> -->
-<!-- 				<div class="small-container">
- -->						<figure>
-						<img class="portfolio-img  invert" src="Images/portfolio-4.png">
-						<div class="blank"></div>
-						<figcaption>Map of Favorite Spots</figcaption>
-						<p class="caption-text">This project uses mapping apps to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+							<figure>
+						<img class="portfolio-img  invert" src="Images/portfolio-4.png" alt="map">
+						
+						<p>Map of Favorite Spots</p>
+						<figcaption class="caption-text">This project uses mapping apps to plot points for my favorite spots in the city for a do-it-yourself walking tour.</figcaption>
 
 					</figure>
 					<figure>
-						<img class="portfolio-img  invert" src="Images/portfolio-5.png">
-						<div class="blank"></div>
-						<figcaption>Photo Gallery</figcaption>
-						<p class="caption-text">This project show pictures from a recent trip and allows them to easily navigate through photos.</p>
+						<img class="portfolio-img  invert" src="Images/portfolio-5.png" alt="gallery">
+						
+						<p>Photo Gallery</p>
+						<figcaption class="caption-text">This project show pictures from a recent trip and allows them to easily navigate through photos.</figcaption>
 
 					</figure>
 					<figure>
-						<img class="portfolio-img  invert" src="Images/portfolio-6.png">
-						<div class="blank"></div>
-						<figcaption>Travel App</figcaption>
-						<p class="caption-text">Someone can enter in the number they want and press the big blue button and get the result.</p>
+						<img class="portfolio-img  invert" src="Images/portfolio-6.png" alt="travel">
+					
+						<p>Travel App</p>
+						<figcaption class="caption-text">Someone can enter in the number they want and press the big blue button and get the result.</figcaption>
 
 					</figure>
 			<!-- </div> -->	
@@ -131,7 +130,7 @@
 
 </div>
 		<div class="contact">
-			<h2>CONTACT</h2>
+			<h2 id="contact">CONTACT</h2>
 			<p class="caption-text">If you're interested in chatting or want more information<br>
 			about what I've been working on, I'd love to hear from you!
 			</p>
@@ -145,13 +144,13 @@
 <hr>
 <footer>
 		<ul class="footer-nav">
-		<li> <a href="#" class="footer-name">Lisa Carlock Hill</a></li>
-		<li> <a href="#" class="footer-menu">CONTACT</a></li>
-		<li> <a href="#" class="footer-menu">PORTFOLIO</a></li>
-		<li> <a href="#" class="footer-menu">HOME</a></li>
+		<li> <a href="#about" class="footer-name">Lisa Carlock Hill</a></li>
+		<li> <a href="#contact" class="footer-menu">CONTACT</a></li>
+		<li> <a href="#portfolio" class="footer-menu">PORTFOLIO</a></li>
+		<li> <a href="#about" class="footer-menu">HOME</a></li>
 		
 		
-	</ul>
+		</ul>
 
 </footer>
 

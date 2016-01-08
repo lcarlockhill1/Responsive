@@ -3,8 +3,10 @@
   position: fixed;
   width: 100%;
   top: 0;}
+
   .mobile div {
   display: none;
+
 }
 .mobile button {
   position: absolute;
@@ -29,9 +31,18 @@
   background-color: transparent;
   border: 0;
 }
+
+.desktop {
+  display: block;
+  overflow: hidden;
+}
+
+
+
 .mobile a {
   display: block;
 }
+
 @media (max-width: 700px) {
   .mobile {
     display: block;

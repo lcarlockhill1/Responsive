@@ -29,9 +29,11 @@ a:hover{
 	color:#d7d447;
 }
 h1.mobile-label{
-	text-align: center;
+	text-align: left;
 	color:#d7d447;
 	font-weight: 300;
+	font-size: 32px;
+	border-bottom: 5px double #777;
 }
 
 /* Nav Beginning*/
@@ -76,7 +78,7 @@ a.top-menu :last-child {
 .wrapper{
 margin: 0 auto;
 /*padding-top: 3em;*/
-clear:all;
+clear:both;
 /*border: 1px solid pink;*/
 }
 /*Banner*/
@@ -106,14 +108,14 @@ clear:all;
 }
 .pic-banner {
     float: right;
-    max-width: 40%;
+    max-width: 30%;
  /*border: 1px solid black;*/
     padding-top: 1em;
     margin: 1em .5em;
 }
 .bio-banner{
 	float:left;
-	max-width:40%;
+	max-width:30%;
 	/*border: 1px solid brown;*/
 	padding-left: 1em;
 }
@@ -132,7 +134,7 @@ clear:all;
 	padding-bottom: 1.2em;
 	
 }
-p.caption-text {
+.caption-text {
     text-align: center;
 }
 figure{
@@ -140,6 +142,7 @@ figure{
 	width: 28%;
 	border: 1px solid grey;
 	margin-right: .05em;
+	padding-bottom: .75em;
 
 }
 /*.small-container{
@@ -161,7 +164,7 @@ figure{
 }
 
 
-figcaption{
+figure p{
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 700;
 	font-size: 1em;
