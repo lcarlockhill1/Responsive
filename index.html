@@ -6,21 +6,33 @@
   <title>Lisa Hill Responsive Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-
+<link rel="stylesheet" href="css/hamburger.css"> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" href="burger.js"></script>
 </head>
 
 <body>
-<header></header>
-	<nav class="fixed-nav-bar">
-			<ul class="top-nav">
-				<li><a href="#" class="name">Lisa Carlock Hill</a></li>
-			
-			<li><a href="#"class="top-menu" "active">HOME</a></li>
-			<li><a href="#" class="top-menu">PORTFOLIO</a></li>
-			<li><a href="#" class="top-menu">CONTACT</a></li>
-			</ul>
 
+	<nav class="fixed-nav-bar desktop">
+			<ul class="top-nav">
+				<li><a href="#" class="name current-item">Lisa Carlock Hill</a></li>
+			
+			<li><a href="#" class="top-menu">CONTACT</a></li>
+			<li><a href="#" class="top-menu">PORTFOLIO</a></li>
+			<li><a href="#"class="top-menu">HOME</a></li>
+			
+			</ul>
+ 
 	</nav>
+	<nav class="mobile">
+<h1 class="mobile-label">Lisa Hill's Site</h1>
+  <button>Toggle</button>
+  <div>
+    <li><a href="#" class="top-menu">CONTACT</a></li>
+			<li><a href="#" class="top-menu">PORTFOLIO</a></li>
+			<li><a href="#"class="top-menu">HOME</a></li>
+  </div>
+</nav>
 <!--  -->
 	<div class="wrapper">
 
@@ -32,25 +44,25 @@
 				</p>
 
 				<p class="bio-text">
-					<span class="text-italic-bold">Technical Skills:</span> HTML 5, CSS3 including animations, WAMP, MAMP, UI/UX, Foundation 5, Bootstrap, Responsive Web Design with media queries, Skeleton, JavaScript, jQuery, jQuery UI, WordPress custom themes.  
+					<span class="text-italic-bold">Technical Skills:</span> 	&nbsp;HTML 5, CSS3 including animations, WAMP, MAMP, UI/UX, Foundation 5, Bootstrap, Responsive Web Design with media queries, Skeleton, JavaScript, jQuery, jQuery UI, WordPress custom themes.  
 				</p>
 
 				<p class="bio-text">
-					<span class="text-italic-bold">Emerging Skills:</span> PHP, MySQL, Sass
+					<span class="text-italic-bold">Emerging Skills:</span>  	&nbsp; PHP, MySQL, Sass
 				</p>
 
 				<p class="bio-text">
-					<span class="text-italic-bold">Trained:</span> JSON, AJAX, Drupal
+					<span class="text-italic-bold">Trained:</span>  	&nbsp; JSON, AJAX, Drupal
 				</p>
 			</article>
 
 
 			<aside class="pic-banner">
-				<div class="big-box">
+				
 				<!-- 780.5px X 250.50px-->	
 
 				<img src="Images/flower1.jpg"class="bio-pic des"/>
-				</div>
+				
 			</aside>
 
 		</div>
@@ -62,24 +74,24 @@
 			<div class="desktop-full-box">
 										<div class="blank"></div>
 
-				<div class="small-container">
-
+<!-- 				<div class="small-container">
+ -->
 					<figure>
-						<img class="portfolio-img" src="Images/portfolio-1.png">
+						<img class="portfolio-img  invert" src="Images/portfolio-1.png">
 						<div class="blank"></div>
 						<figcaption>Marketing Page</figcaption>
 						<p class="caption-text">The project show the front page of a marketing website mean for a specific business I am interestested in.</p>
 
 					</figure>
 					<figure>
-						<img class="portfolio-img" src="Images/portfolio-2.png">
+						<img class="portfolio-img   invert" src="Images/portfolio-2.png">
 						<div class="blank"></div>
 						<figcaption>Search Page</figcaption>
 						<p class="caption-text">This project searches through a specific database to find information that the user's trying to look up.</p>
 
 					</figure>
 					<figure>
-						<img class="portfolio-img" src="Images/portfolio-3.png">
+						<img class="portfolio-img  invert" src="Images/portfolio-3.png">
 						<div class="blank"></div>
 						<figcaption>Travel App</figcaption>
 						<p class="caption-text">This project compares travel times based on different transportation methods and tells you the best one.</p>
@@ -87,31 +99,31 @@
 					</figure>
 
 
-				</div>
-				<div class="blank"></div>
-				<div class="small-container">
-						<figure>
-						<img class="portfolio-img" src="Images/portfolio-4.png">
+				<!-- </div> -->
+			<!-- 	<div class="blank"></div> -->
+<!-- 				<div class="small-container">
+ -->						<figure>
+						<img class="portfolio-img  invert" src="Images/portfolio-4.png">
 						<div class="blank"></div>
 						<figcaption>Map of Favorite Spots</figcaption>
 						<p class="caption-text">This project uses mapping apps to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
 
 					</figure>
 					<figure>
-						<img class="portfolio-img" src="Images/portfolio-5.png">
+						<img class="portfolio-img  invert" src="Images/portfolio-5.png">
 						<div class="blank"></div>
 						<figcaption>Photo Gallery</figcaption>
 						<p class="caption-text">This project show pictures from a recent trip and allows them to easily navigate through photos.</p>
 
 					</figure>
 					<figure>
-						<img class="portfolio-img" src="Images/portfolio-6.png">
+						<img class="portfolio-img  invert" src="Images/portfolio-6.png">
 						<div class="blank"></div>
 						<figcaption>Travel App</figcaption>
 						<p class="caption-text">Someone can enter in the number they want and press the big blue button and get the result.</p>
 
 					</figure>
-			</div>	
+			<!-- </div> -->	
 								
 
 		</div>
@@ -123,8 +135,8 @@
 			<p class="caption-text">If you're interested in chatting or want more information<br>
 			about what I've been working on, I'd love to hear from you!
 			</p>
-			<p class="contact info">Phone:<span class="bolded">(612)555-1212</span></p>
-			<p class="contact info">Email:<span class="bolded">lisa@myemail.com</span></p>
+			<p class="contact info  "><span class="text-italic-bold">Phone:</span>  (612)555-1212</p>
+			<p class="contact info"><span class="text-italic-bold">Email:</span>  lisa@myemail.com</p>
 
 		</div>
 
@@ -134,9 +146,11 @@
 <footer>
 		<ul class="footer-nav">
 		<li> <a href="#" class="footer-name">Lisa Carlock Hill</a></li>
-		<li> <a href="#" class="footer-menu">HOME</a></li>
-		<li> <a href="#" class="footer-menu">PORTFOLIO</a></li>
 		<li> <a href="#" class="footer-menu">CONTACT</a></li>
+		<li> <a href="#" class="footer-menu">PORTFOLIO</a></li>
+		<li> <a href="#" class="footer-menu">HOME</a></li>
+		
+		
 	</ul>
 
 </footer>

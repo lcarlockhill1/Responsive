@@ -22,6 +22,18 @@ a{
 	font-size:20px;
 	color:#777;
 }
+a:hover{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:bold;
+	font-size:20px;
+	color:#d7d447;
+}
+h1.mobile-label{
+	text-align: center;
+	color:#d7d447;
+	font-weight: 300;
+}
+
 /* Nav Beginning*/
 
 .fixed-nav-bar {
@@ -65,12 +77,12 @@ a.top-menu :last-child {
 margin: 0 auto;
 /*padding-top: 3em;*/
 clear:all;
-border: 1px solid pink;
+/*border: 1px solid pink;*/
 }
 /*Banner*/
 .about{
-		border: 1px solid maroon;
-		margin-top: 5em;
+/*		border: 1px solid maroon;
+*/		margin-top: 5em;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin-bottom: 1em;
@@ -78,32 +90,39 @@ border: 1px solid pink;
 	}
 .bio-pic{
 	height: 200px;
-    width: 300px;
+    width: 80%;
 	border-radius: 6px;
+	border: 2px solid #000;
+	float:left;
 }
 .bio-pic.des:hover{
 	height: 200px;
-    width: 300px;
+    width: 80%;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	opacity:.80;
 		border-radius: 6px;
-
+	border: 2px solid #000;
 }
-.pic-banner{
-	float:right;
-	max-width:40%;
-	border: 1px solid black;
-
+.pic-banner {
+    float: right;
+    max-width: 40%;
+ /*border: 1px solid black;*/
+    padding-top: 1em;
+    margin: 1em .5em;
 }
 .bio-banner{
 	float:left;
-	max-width:50%;
+	max-width:40%;
 	/*border: 1px solid brown;*/
 	padding-left: 1em;
 }
 .big-box {
-    margin-left: 30%;
+    margin-left: 40%;
+}
+.text-italic-bold{
+	font-weight: 700;
+	text-decoration: underline;
 }
 /* Portfolio*/
 .portfolio{
@@ -119,14 +138,14 @@ p.caption-text {
 figure{
 	display: inline-block;
 	width: 28%;
-	border: 1px solid pink;
+	border: 1px solid grey;
 	margin-right: .05em;
 
 }
-.small-container{
+/*.small-container{
 	max-width: 100%;
 	
-	}
+	}*/
 
 .portfolio-img{
 	max-width:100%;
@@ -135,7 +154,11 @@ figure{
 .blank{
 		height: 1em;
 }
+.portfolio-img.invert:hover{
+	 -webkit-filter: invert(100%); /* Chrome, Safari, Opera */
+    filter: invert(100%);
 
+}
 
 
 figcaption{
@@ -150,16 +173,16 @@ div.contact{
 }
 /* Footer Beginning*/
 footer{
-		border: 1px solid green;
+/*		border: 1px solid green;*/	
 	width:100%;
 	clear:both;
-padding-right: 1em;
-   height:5em;
-   
+	padding-right: 1em;
+   height:3em;
+
 }
 ul.footer-nav{
 	list-style-type: none;
-		display: inline-block;
+		
 
 }
 a.footer-name{
@@ -169,14 +192,91 @@ a.footer-name{
 	font-size: 1em;
 }
 a.footer-menu{
-	padding-left: 1.5em;
+	padding-left: 1em;
 	padding-right: 1em;
 	text-decoration: none;
-	 border-right: 1px solid #bbb;
+	/* border-right: 1px solid #bbb;*/
 	font-size: 1em;
 	text-transform: uppercase;
+	   display: inline-block;
+	       display: block;
+    float: right;
+
 }
-a.footer-name :last-child {
-    border-right: none;
+
+/* Media Queries Tablet*/
+@media screen and (min-width: 700px) {
+  
+.bio-banner{
+	float:left;
+	max-width:50%;
+	/*border: 1px solid brown;*/
+	padding-left: 2em;
 }
-/* Media Queries Beginning*/
+
+	
+}
+
+
+/* Media Queries mobile*/
+@media screen and (max-width: 620px) {
+  
+.bio-banner{
+	/*float:left;*/
+	max-width:100%;
+	/*border: 1px solid brown;*/
+	padding-left: 2em;
+}
+.pic-banner {
+    float: none;
+    max-width: 100%;
+ /*border: 1px solid black;*/
+    padding-top: 1em;
+    margin: 1em .5em;
+}
+a.footer-menu{
+	padding-left: .5em;
+	padding-right: .5em;
+	text-decoration: none;
+	/* border-right: 1px solid #bbb;*/
+	font-size: 1em;
+	text-transform: uppercase;
+	   display: inline-block;
+	       
+    float: right;
+
+}
+	h1,h2{
+		padding-top: 1.5em;
+	}
+}
+@media screen and (max-width: 450px) {
+
+figure{
+	display: block;
+	width: 100%;
+	border: 1px solid grey;
+	margin-left: .05em;
+
+}
+a.footer-nav{
+	display:block;
+	  
+}
+a.footer-name{
+	float:none;
+}
+a.footer-menu{
+	padding-left: 1em;
+/*	padding-right: .5em;*/
+	text-decoration: none;
+	/* border-right: 1px solid #bbb;*/
+	font-size: 1em;
+	text-transform: uppercase;
+	   /*display:block;
+	       display: block;*/
+    float: none;
+
+}
+	
+}
